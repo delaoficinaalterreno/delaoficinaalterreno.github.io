@@ -79,6 +79,8 @@ section{padding:80px 0}
 .contact h2{font-size:clamp(28px,4vw,40px)}
 .contact p{opacity:.8;margin:12px auto 30px;max-width:540px}
 .contact .btns{justify-content:center}
+.copy{margin-top:16px;background:none;border:0;color:var(--dark-ink);opacity:.75;font:inherit;font-size:14px;text-decoration:underline;cursor:pointer;padding:8px}
+.copy:hover{opacity:1;color:var(--accent)}
 .contact .line{margin-top:26px;font-size:15px;opacity:.75}
 footer{background:#161e25;color:#9aa3ab;font-size:14px;padding:22px 0;text-align:center}
 
@@ -236,8 +238,9 @@ footer{background:#161e25;color:#9aa3ab;font-size:14px;padding:22px 0;text-align
     <p>Escríbeme y te respondo con fechas, horarios y formas de pago.</p>
     <div class="btns">
       <a class="btn btn-main" href="https://wa.me/56991395213" target="_blank" rel="noopener">WhatsApp +56 9 9139 5213</a>
-      <a class="btn btn-ghost" href="mailto:delaoficinaalterreno@gmail.com">delaoficinaalterreno@gmail.com</a>
+      <a class="btn btn-ghost" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=delaoficinaalterreno@gmail.com&amp;su=Consulta%20cursos%20De%20la%20Oficina%20al%20Terreno" target="_blank" rel="noopener">delaoficinaalterreno@gmail.com</a>
     </div>
+    <button class="copy" type="button" onclick="navigator.clipboard.writeText('delaoficinaalterreno@gmail.com').then(()=>{this.textContent='Correo copiado ✓'}).catch(()=>{this.textContent='delaoficinaalterreno@gmail.com'})">Copiar correo</button>
     <div class="line">Ingeniero en Construcción · De la Oficina al Terreno</div>
   </div>
 </section>
