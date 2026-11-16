@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>De la Oficina al Terreno</title>
-<meta name="description" content="Cursos online de MS Project con Last Planner, Cubicación, Interpretación de Planos y APU. Programación de obras y cartas Gantt. Dictado por Ingeniero en Construcción con más de 18 años de experiencia.">
+<meta name="description" content="Cursos online de MS Project con Last Planner, Cubicación, Interpretación de Planos y APU. Programación de obras y cartas Gantt. Servicio de programación y seguimiento con Last Planner para empresas constructoras. Dictado por Ingeniero en Construcción con más de 18 años de experiencia.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://delaoficinaalterreno.github.io/">
 <meta property="og:title" content="De la Oficina al Terreno | Cursos y servicios de planificación, cubicación y licitaciones">
@@ -62,6 +62,8 @@ section{padding:80px 0}
 .head h2{font-size:clamp(28px,4vw,40px)}
 .head p{color:var(--muted);margin-top:10px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.grid.g2{grid-template-columns:repeat(2,1fr)}
+@media(max-width:700px){.grid.g2{grid-template-columns:1fr}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px;display:flex;flex-direction:column;border-top:4px solid var(--accent)}
 .card.soon{border-top-color:var(--line)}
 .card h3{font-size:22px;margin-bottom:6px}
@@ -71,6 +73,9 @@ section{padding:80px 0}
 .card li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:8px;background:var(--accent);transform:rotate(45deg)}
 .card.soon li::before{background:var(--line)}
 .price{font-family:Archivo;font-size:28px;font-weight:800;margin-bottom:16px}
+.price .old{font-family:Inter;font-size:18px;font-weight:500;color:var(--muted)}
+.price small{white-space:nowrap}
+.bf{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:4px;margin-bottom:8px;width:max-content}
 .price small{font-family:Inter;font-size:14px;font-weight:500;color:var(--muted)}
 .card .btn{text-align:center;background:var(--dark);color:var(--dark-ink)}
 .card .btn:hover{background:var(--accent);color:var(--accent-ink)}
@@ -144,7 +149,8 @@ footer{background:#161e25;color:#9aa3ab;font-size:14px;padding:22px 0;text-align
           <li>Last Planner: plan intermedio, lookahead y PAC</li>
           <li><b>Certificado digital incluido</b></li>
         </ul>
-        <div class="price">$120.000 <small>CLP por alumno</small></div>
+        <div class="bf">Oferta Black Friday</div>
+        <div class="price"><s class="old">$120.000</s><br>$89.990 <small>CLP por alumno</small></div>
         <a class="btn" href="https://wa.me/56991395213?text=Hola,%20quiero%20inscribirme%20en%20el%20curso%20de%20MS%20Project%20%2B%20Last%20Planner" target="_blank" rel="noopener">Inscribirme</a>
       </article>
 
@@ -175,7 +181,8 @@ footer{background:#161e25;color:#9aa3ab;font-size:14px;padding:22px 0;text-align
           <li>Análisis de riesgo Montecarlo con Primavera Risk Analysis</li>
           <li><b>Certificado digital incluido</b></li>
         </ul>
-        <div class="price">$170.000 <small>CLP por alumno</small></div>
+        <div class="bf">Oferta Black Friday</div>
+        <div class="price"><s class="old">$170.000</s><br>$129.990 <small>CLP por alumno</small></div>
         <a class="btn" href="https://wa.me/56991395213?text=Hola,%20quiero%20informaci%C3%B3n%20del%20curso%20de%20Primavera%20P6%20%2B%20Last%20Planner" target="_blank" rel="noopener">Inscribirme</a>
       </article>
     </div>
@@ -188,7 +195,21 @@ footer{background:#161e25;color:#9aa3ab;font-size:14px;padding:22px 0;text-align
       <h2>Servicios para empresas</h2>
       <p>Para constructoras, contratistas e independientes que necesitan planificar o cotizar con respaldo técnico.</p>
     </div>
-    <div class="grid">
+    <div class="grid g2">
+      <article class="card">
+        <span class="pill">Nuevo</span>
+        <h3>Programación y seguimiento con Last Planner</h3>
+        <div class="meta">Para empresas constructoras · MS Project o Primavera P6</div>
+        <ul>
+          <li>Programa maestro y plan por fases, armado junto a tu equipo con Pull Planning</li>
+          <li>Lookahead y liberación de restricciones antes de que frenen la obra</li>
+          <li>Plan semanal con medición de PAC y análisis de causas de no cumplimiento</li>
+          <li>Seguimiento periódico e informes de avance y cumplimiento para la gerencia</li>
+        </ul>
+        <div class="price"><small>Cotización según el alcance y el plazo de la obra</small></div>
+        <a class="btn" href="https://wa.me/56991395213?text=Hola,%20necesito%20cotizar%20programaci%C3%B3n%20y%20seguimiento%20con%20Last%20Planner%20para%20mi%20empresa" target="_blank" rel="noopener">Cotizar</a>
+      </article>
+
       <article class="card">
         <h3>Programas de obra y cartas Gantt</h3>
         <div class="meta">MS Project o Primavera P6</div>
